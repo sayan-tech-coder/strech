@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.css">
+
+html{
+	scroll-behavior: smooth;
+
+
+
+}
+*{
+	box-sizing: border-box;
+
+	margin: 0px;
+
+	padding: 0px ;
+	font-family: 'Oswald', sans-serif;
+}
+
+body{
+	 margin: 0 auto; /* Center website */
+  /* Max width */
+  padding: 20px;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+}
+nav{
+  display: flex;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+    ;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 40px;
+    padding: 25px;
+
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+
+
+
+
+.about{
+	padding: 70px 15px;
+	background-color: #ffffff;
+}
+
+
+.about .content{
+	display: flex;
+	-webkit-display:flex;
+
+
+}
+.about .content .box{
+	flex:0 0 33.33%;
+	max-width:33.33%;
+	padding:15px;
+
+}
+.about .content .box .inner{
+	background-color: #222222;
+	
+}
+
+
+	.about .content .box:nth-child(2) .inner{
+		background-color: #c11325;
+	}
+
+	.about .content .box .inner .img img{
+		width: 100%;
+}	
+
+	.about .content .box .inner .text{
+		padding: 20px 15px;
+}
+.about .content .box .inner .text h4{
+	font-size: 22px;
+	
+	margin-bottom: 0px;
+	padding: 0px 0px 15px;
+font-family: 'Raleway', sans-serif;
+	color: #ffffff;
+	text-transform:capitalize;
+	text-align: center;
+}
+.about .content .box .inner .text p{
+	
+	font-size: 18px;
+	line-height: 20px;
+	color: #c5c5c5;
+	margin: 0;
+font-family: 'Nunito', sans-serif;
+}
+
+
+
+
+
+
+
+/*Responsive*/
+
+
+
+
+/*if screen width is less than or equal to 767px then*/
+@media(max-width:767px){
+
+  .about .content{
+  	 flex-wrap: wrap;
+  }
+  .about .content .box {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+	
+
+}
+
+
+
+
+
+
+
+@media(max-width:959px){
+	
+  .about .content{
+  	 flex-wrap: wrap;
+  }
+  .about .content .box {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 600px) {
+	
+
+  .about .content{
+  	 flex-wrap: wrap;
+  }
+  .about .content .box {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+}
+
+
+
+
+
+@media(max-width: 1200px) 
+{	
+
+	.about{
+		padding: 70px;
+	}
+.about .content .box .inner .img img{
+	height: 600px;
+}
+
+
+
+  .about .content{
+  	 flex-wrap: wrap;
+  }
+  .about .content .box {
+    flex: 0 0 100%;
+    max-width: 100%;
+   
+
+
+	
+}
+}
+
+footer {
+  color: #666;
+  background: #222;
+  posittion: fixed;
+  bottom: 0px;
+  padding: 17px 0 18px 0;
+  border-top: 1px solid #000;
+  text-align: center;
+  width: 100%;
+  bottom: 0px;
+}
+footer a {
+  color: #999;
+}
+footer a:hover {
+  color: #efefef;
+}
+
+/* responsive footer fix by Aalaap Ghag 
+This is where the magic happens */
+@media (max-width: 767px) {
+  footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.footer .container {
+  max-width: 940px;
+}
+
+
+
+
+
+
